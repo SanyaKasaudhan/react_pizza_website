@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 import {BrowserRouter as Router} from 'react-router-dom'
 import { GlobalStyle } from './globalStyles';
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Router>
       <GlobalStyle />
-      <Navbar/>
+      <Hero/>
       </Router>
     </div>
   );
