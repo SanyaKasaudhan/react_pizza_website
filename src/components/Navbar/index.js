@@ -6,7 +6,7 @@ import {Bars, Nav,NavIcon,NavLink} from './NavbarElements'
             <Nav>
             <NavLink to="/">Pizza</NavLink>
             <NavIcon>
-                <p style={{paddingRight:"11px"}}>Menu</p>
+                <p style={{marginRight:"61px"}}>Menu</p>
                 <Bars />
             </NavIcon>
             </Nav>

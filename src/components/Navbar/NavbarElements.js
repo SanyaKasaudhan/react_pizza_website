@@ -9,7 +9,7 @@ justify-content:center;
 font-weight:788;
 `;
 export const NavLink=styled(Link)`
-color:black;
+color:#fff;
 font-size:2rem;
 display:flex;
 align-items:center;
@@ -24,7 +24,9 @@ cursor:pointer;
 `;
 
 export const NavIcon= styled.nav`
-display:black;
+display:flex;
+padding-top:23px;
+padding-right:16px;
 position:absolute;
 top:0;
 right:0;
@@ -32,13 +34,16 @@ cursor:pointer;
 color:#fff;
 
 p{
-    right:25px;
-    trasnform:translated(-55%,100%);
+    
+    trasnform:translated(-175%,100%);
     font-weight:bold;
+    font-size:22px;
 }
 `
 
 export const Bars=styled(FaPizzaSlice)`
-font-size:2rem;
+
+padding-right:15px;
+font-size:3rem;
 transform:translate(-50%,-15%);
 `
