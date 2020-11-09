@@ -70,7 +70,7 @@ justify-content:center;
 `;
 
 export const SidebarRoute=styled(Link)`
-backround:#e31837;
+background:red;;
 white-space:nowrap;
 padding:16px 64px;
 color:#fff;

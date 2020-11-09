@@ -5,7 +5,7 @@ import {SidebarContainer,SidebarLink,Icon,CloseIcon,
     return (
         <div>
             <SidebarContainer isOpen={isOpen} onClick={toggle}>
-                <Icon>
+                <Icon onClick={toggle}>
                     <CloseIcon></CloseIcon>
                 </Icon>
                 <SidebarMenu>
