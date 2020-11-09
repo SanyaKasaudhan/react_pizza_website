@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {ProductButton,
     ProductCard,
     ProductDesc,
@@ -8,17 +8,19 @@ import {ProductButton,
     ProductInfo,
     ProductPrice,
     ProductTitle,
-ProductsContainer}from './ProductElements'
-const Products = (heading,data) => {
+ProductContainer}from './ProductElements'
+const Products = (heading, data) => {
     return (
         <div>
-            <ProductsContainer>
+            <ProductContainer>
                 <ProductHeading>{heading}</ProductHeading>
                 <ProductWrapper>
-                    {data.map((product,index)=>{
+                    {
+                    data.map((product,index)=>{
                         return (
                             <ProductCard key={index}>
-                                <ProductImg src={product.img} alt={product.alt} />
+                                <ProductImg src={product.img} 
+                                alt={product.alt} />
                                 <ProductInfo>
                                     <ProductTitle>{product.name}</ProductTitle>
                                     <ProductDesc>{product.desc}</ProductDesc>
@@ -27,9 +29,10 @@ const Products = (heading,data) => {
                                 </ProductInfo>
                             </ProductCard>
                         )
-                    })}
+                    })
+                    }
                 </ProductWrapper>
-            </ProductsContainer>
+            </ProductContainer>
         </div>
     )
 }
