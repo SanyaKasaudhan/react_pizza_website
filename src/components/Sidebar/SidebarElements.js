@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
-import {FaTimes} from 'react-router-dom'
+import {FaTimes} from 'react-icons/fa'
 
 export const SidebarContainer= styled.aside`
 position:fixed;
@@ -67,7 +67,7 @@ export const SideBtnWrap=styled.div`
 
 display:flex;
 justify-content:center;
-`
+`;
 
 export const SidebarRoute=styled(Link)`
 backround:#e31837;
@@ -81,3 +81,9 @@ cursor:pointer;
 transition:0.2s ease-in-out;
 text-decoration:none;
 
+&:hover{
+    background:#fff;
+    color:#010606;
+transition:0.2s ease-in-out;
+}
+`;
